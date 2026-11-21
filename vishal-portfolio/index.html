@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal Chandravanshi | Cloud & DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Vishal Chandravanshi - AWS Certified Solutions Architect, Cloud & DevOps engineer building GitOps pipelines, Kubernetes platforms and observability stacks." />
+  <meta name="theme-color" content="#06080c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <noscript><style>.reveal,.reveal-l,.reveal-r{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="loader" id="loader"><div class="loader-logo">VC<span>.</span></div><div class="loader-bar"><i></i></div></div>
+  <div class="progress" id="progress"></div>
+  <div class="cursor" id="cursor"></div><div class="cursor-dot" id="cursorDot"></div>
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo"><span class="logo-mark">VC</span> Vishal<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#certifications">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="pill pill-white nav-cta magnetic">Hire me</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="net"></canvas>
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="tag reveal"><span class="ping"></span> Open to opportunities</div>
+        <h1 class="reveal" data-split>Hi, I'm Vishal Chandravanshi</h1>
+        <p class="role reveal"><i class="fa-solid fa-terminal"></i> <span id="typed"></span><span class="caret">|</span></p>
+        <p class="lead reveal">I build secure, automated and observable cloud platforms. <strong>AWS Certified Solutions Architect</strong> with hands-on experience in Kubernetes, GitOps and infrastructure as code.</p>
+        <div class="hero-btns reveal">
+          <a href="Vishal_Chandravanshi_CV.pdf" download class="pill pill-white magnetic"><i class="fa-solid fa-download"></i> Download CV</a>
+          <a href="#projects" class="pill pill-dark magnetic">View projects <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-mini reveal">
+          <div><b data-count="3">0</b><span>Projects</span></div>
+          <div><b data-count="4">0</b><span>Certificates</span></div>
+          <div><b data-count="19">0</b><span>Tools</span></div>
+        </div>
+        <div class="socials reveal">
+          <a href="https://github.com/Vishal2345678" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/vishalchandravanshi6" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:vishalchandravanshi59@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://wa.me/919110017202" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-stage" id="stage">
+        <div class="big-word" data-depth="-14">DEVOPS</div>
+        <div class="halo" data-depth="10"></div>
+        <div class="ring r1"></div><div class="ring r2"></div>
+        <div class="orbit" data-depth="18">
+          <span class="chip c1"><i class="devicon-kubernetes-plain colored"></i></span>
+          <span class="chip c2"><i class="devicon-docker-plain colored"></i></span>
+          <span class="chip c3"><i class="devicon-terraform-plain colored"></i></span>
+          <span class="chip c4"><i class="fa-brands fa-aws" style="color:#ff9900"></i></span>
+          <span class="chip c5"><i class="devicon-grafana-original colored"></i></span>
+          <span class="chip c6"><i class="devicon-linux-plain"></i></span>
+        </div>
+        <img class="portrait" id="portrait" data-depth="6" src="images/vishal-cutout.png" alt="Vishal Chandravanshi" />
+        <div class="badge b-aws" data-depth="26"><i class="fa-brands fa-aws"></i><div><b>AWS Certified</b><span>Solutions Architect – Associate</span></div></div>
+        <div class="badge b-git" data-depth="30"><i class="fa-solid fa-rocket"></i><div><b>GitOps</b><span>Zero-downtime deploys</span></div></div>
+        <div class="badge b-eks" data-depth="22"><i class="devicon-kubernetes-plain colored"></i><div><b>EKS · ArgoCD</b><span>Automated pipelines</span></div></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee">
+    <div class="track">
+      <div class="seq">
+        <span><i class="fa-brands fa-aws" style="color:#ff9900"></i> AWS</span>
+        <span><i class="devicon-kubernetes-plain colored"></i> Kubernetes</span>
+        <span><i class="devicon-docker-plain colored"></i> Docker</span>
+        <span><i class="devicon-terraform-plain colored"></i> Terraform</span>
+        <span><i class="devicon-argocd-plain colored"></i> ArgoCD</span>
+        <span><i class="devicon-githubactions-plain colored"></i> GitHub Actions</span>
+        <span><i class="devicon-prometheus-original colored"></i> Prometheus</span>
+        <span><i class="devicon-grafana-original colored"></i> Grafana</span>
+        <span><i class="devicon-linux-plain"></i> Linux</span>
+        <span><i class="devicon-python-plain colored"></i> Python</span>
+        <span><i class="devicon-azure-plain colored"></i> Azure</span>
+      </div>
+      <div class="seq" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-visual reveal-l">
+        <div class="av-card">
+          <img src="images/vishal-cutout.png" alt="Vishal Chandravanshi" />
+        </div>
+        <div class="code-card">
+          <div class="cc-bar"><i></i><i></i><i></i><span>pipeline.yml</span></div>
+<pre><code><b>on:</b> push
+<b>jobs:</b>
+  deploy:
+    <b>permissions:</b> id-token: write
+    <b>steps:</b>
+      - build &amp; push → <em>ECR</em>
+      - update manifest
+      - <em>ArgoCD</em> syncs → <em>EKS</em> ✔</code></pre>
+        </div>
+        <div class="exp-badge"><b>3+</b><span>years of<br>B.Tech learning</span></div>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow reveal"><span></span> About me</p>
+        <h2 class="h2 reveal">Turning manual deployments into <em>automated, reliable</em> systems.</h2>
+        <p class="reveal">I'm a B.Tech Computer Science student at Lovely Professional University and an <strong>AWS Certified Solutions Architect – Associate</strong>. I enjoy designing the plumbing that lets teams ship fast and sleep well: CI/CD pipelines, GitOps workflows, container platforms and monitoring that catches problems before users do.</p>
+        <p class="reveal">My projects cover the full lifecycle: provisioning infrastructure with Terraform, deploying microservices on AWS EKS with ArgoCD, securing pipelines with OIDC instead of long-lived keys, and building Prometheus and Grafana dashboards for proactive troubleshooting.</p>
+        <ul class="facts reveal">
+          <li><i class="fa-solid fa-location-dot"></i><span>Based in</span><b>Punjab, India</b></li>
+          <li><i class="fa-solid fa-graduation-cap"></i><span>Studying</span><b>B.Tech CSE · LPU</b></li>
+          <li><i class="fa-solid fa-medal"></i><span>Certified</span><b>AWS Solutions Architect</b></li>
+          <li><i class="fa-solid fa-envelope"></i><span>Email</span><b>vishalchandravanshi59@gmail.com</b></li>
+        </ul>
+        <div class="reveal"><a href="Vishal_Chandravanshi_CV.pdf" download class="pill pill-white magnetic"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow reveal"><span></span> What I do</p>
+        <h2 class="h2 reveal">Skills that move software <em>from commit to production</em></h2>
+      </div>
+      <div class="svc-grid">
+        <article class="svc tilt reveal"><div class="svc-ic"><i class="fa-brands fa-aws"></i></div><h3>Cloud Infrastructure</h3><p>Designing and operating workloads on AWS (EC2, IAM, VPC, Security Groups, EKS, ECR) with secure, least-privilege access.</p><span class="num">01</span></article>
+        <article class="svc tilt reveal"><div class="svc-ic"><i class="fa-solid fa-code-branch"></i></div><h3>CI/CD & GitOps</h3><p>GitHub Actions pipelines that build, push and promote images, with ArgoCD keeping clusters aligned to Git as the source of truth.</p><span class="num">02</span></article>
+        <article class="svc tilt reveal"><div class="svc-ic"><i class="devicon-kubernetes-plain"></i></div><h3>Containers & Kubernetes</h3><p>Dockerised microservices orchestrated on Kubernetes with rolling updates and zero-downtime releases.</p><span class="num">03</span></article>
+        <article class="svc tilt reveal"><div class="svc-ic"><i class="fa-solid fa-chart-line"></i></div><h3>Observability</h3><p>Prometheus, Grafana and Alertmanager stacks with dashboards and alert rules for proactive fault detection.</p><span class="num">04</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow reveal"><span></span> Tech stack</p>
+        <h2 class="h2 reveal">Tools & technologies I work with</h2>
+      </div>
+      <div class="filters reveal" id="filters">
+        <button class="f active" data-f="all">All</button>
+        <button class="f" data-f="cloud">Cloud</button>
+        <button class="f" data-f="container">Containers</button>
+        <button class="f" data-f="devops">IaC & CI/CD</button>
+        <button class="f" data-f="monitor">Monitoring</button>
+        <button class="f" data-f="lang">Languages & OS</button>
+        <button class="f" data-f="tools">Tools</button>
+      </div>
+      <div class="tiles" id="tiles">
+        <div class="tile reveal" data-cat="cloud"><i class="fa-brands fa-aws" style="color:#ff9900"></i><b>AWS</b><small>EC2 · IAM · VPC · EKS · ECR</small></div>
+        <div class="tile reveal" data-cat="cloud"><i class="devicon-azure-plain colored"></i><b>Microsoft Azure</b><small>Cloud platform</small></div>
+        <div class="tile reveal" data-cat="container"><i class="devicon-docker-plain colored"></i><b>Docker</b><small>Images · Compose</small></div>
+        <div class="tile reveal" data-cat="container"><i class="devicon-kubernetes-plain colored"></i><b>Kubernetes</b><small>Orchestration · EKS</small></div>
+        <div class="tile reveal" data-cat="devops"><i class="devicon-terraform-plain colored"></i><b>Terraform</b><small>Infrastructure as Code</small></div>
+        <div class="tile reveal" data-cat="devops"><i class="devicon-argocd-plain colored"></i><b>ArgoCD</b><small>GitOps delivery</small></div>
+        <div class="tile reveal" data-cat="devops"><i class="devicon-githubactions-plain colored"></i><b>GitHub Actions</b><small>CI/CD · OIDC</small></div>
+        <div class="tile reveal" data-cat="devops tools"><i class="devicon-git-plain colored"></i><b>Git</b><small>Version control</small></div>
+        <div class="tile reveal" data-cat="devops tools"><i class="devicon-github-original"></i><b>GitHub</b><small>Repos · Workflows</small></div>
+        <div class="tile reveal" data-cat="monitor"><i class="devicon-prometheus-original colored"></i><b>Prometheus</b><small>Metrics & scraping</small></div>
+        <div class="tile reveal" data-cat="monitor"><i class="devicon-grafana-original colored"></i><b>Grafana</b><small>Dashboards</small></div>
+        <div class="tile reveal" data-cat="monitor"><i class="fa-solid fa-bell" style="color:#e6522c"></i><b>Alertmanager</b><small>Alert routing</small></div>
+        <div class="tile reveal" data-cat="lang"><i class="devicon-python-plain colored"></i><b>Python</b><small>Scripting · ML</small></div>
+        <div class="tile reveal" data-cat="lang"><i class="devicon-cplusplus-plain colored"></i><b>C++</b><small>DSA · Problem solving</small></div>
+        <div class="tile reveal" data-cat="lang"><i class="devicon-linux-plain"></i><b>Linux</b><small>Administration</small></div>
+        <div class="tile reveal" data-cat="lang"><i class="devicon-bash-plain"></i><b>Bash</b><small>Automation</small></div>
+        <div class="tile reveal" data-cat="tools"><i class="devicon-mysql-original colored"></i><b>MySQL</b><small>Databases</small></div>
+        <div class="tile reveal" data-cat="tools"><i class="devicon-postman-plain colored"></i><b>Postman</b><small>API testing</small></div>
+        <div class="tile reveal" data-cat="tools"><i class="devicon-vscode-plain colored"></i><b>VS Code</b><small>Editor</small></div>
+      </div>
+      <div class="soft reveal">
+        <span class="soft-t">Core competencies</span>
+        <span>Troubleshooting</span><span>Analytical Thinking</span><span>Communication</span><span>Team Collaboration</span><span>Adaptability</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow reveal"><span></span> Selected work</p>
+        <h2 class="h2 reveal">Projects, with the <em>workflow behind each one</em></h2>
+      </div>
+
+      <!-- Project 1 -->
+      <article class="project">
+        <div class="p-info reveal-l">
+          <span class="p-no">01</span>
+          <div class="p-date">Aug'26 – Sep'26</div>
+          <h3>GitShip</h3>
+          <h4>Microservices GitOps Deployment on AWS EKS</h4>
+          <ul>
+            <li>Architected an end-to-end GitOps pipeline for a containerized microservices app using Docker, Kubernetes, AWS EKS, GitHub Actions and ArgoCD.</li>
+            <li>Automated CI/CD to build images, push to Amazon ECR and update Kubernetes manifests on every code push.</li>
+            <li>Secured GitHub-to-AWS authentication with OIDC and IAM roles, removing long-lived access keys.</li>
+            <li>ArgoCD continuous sync and rolling updates deliver zero-downtime deployments with Git as the source of truth.</li>
+          </ul>
+          <div class="chips"><span>AWS EKS</span><span>Docker</span><span>Kubernetes</span><span>Amazon ECR</span><span>GitHub Actions</span><span>ArgoCD</span><span>IAM / OIDC</span></div>
+          <a class="pill pill-dark magnetic" href="https://github.com/Vishal2345678" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
+        </div>
+        <div class="p-visual reveal-r">
+          <div class="win">
+            <div class="win-bar"><i></i><i></i><i></i><span>gitship / workflow</span></div>
+            <div class="flow">
+              <div class="node"><div class="ic"><i class="fa-solid fa-laptop-code"></i></div><b>Developer</b><small>git push</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="devicon-githubactions-plain colored"></i></div><b>GitHub Actions</b><small>Build image</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="fa-solid fa-box-archive" style="color:#ff9900"></i></div><b>Amazon ECR</b><small>Push image</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="fa-solid fa-file-code"></i></div><b>Manifests</b><small>Tag updated</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="devicon-argocd-plain colored"></i></div><b>ArgoCD</b><small>Auto-sync</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="devicon-kubernetes-plain colored"></i></div><b>AWS EKS</b><small>Rolling update</small></div>
+            </div>
+            <div class="rail"><i class="fa-solid fa-shield-halved"></i> Security rail: GitHub OIDC <i class="fa-solid fa-arrow-right"></i> IAM Role <i class="fa-solid fa-arrow-right"></i> short-lived AWS credentials (no stored keys)</div>
+            <div class="shot" data-shot="gitship"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project rev">
+        <div class="p-info reveal-r">
+          <span class="p-no">02</span>
+          <div class="p-date">Apr'26 – May'26</div>
+          <h3>Cloud Observability Stack</h3>
+          <h4>Monitoring with Prometheus, Grafana & Alertmanager</h4>
+          <ul>
+            <li>Deployed a cloud observability stack using Prometheus, Grafana, Alertmanager, Docker, Terraform and AWS EC2.</li>
+            <li>Centralised infrastructure monitoring for server health, resource utilisation and application performance with real-time dashboards.</li>
+            <li>Streamlined provisioning with Terraform and containerised deployment with Docker Compose for repeatable environments.</li>
+            <li>Built Grafana dashboards and Alertmanager rules for proactive fault detection and faster troubleshooting.</li>
+          </ul>
+          <div class="chips"><span>AWS EC2</span><span>Prometheus</span><span>Grafana</span><span>Alertmanager</span><span>Terraform</span><span>Docker Compose</span><span>Linux</span></div>
+          <a class="pill pill-dark magnetic" href="https://github.com/Vishal2345678" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
+        </div>
+        <div class="p-visual reveal-l">
+          <div class="win">
+            <div class="win-bar"><i></i><i></i><i></i><span>observability / architecture</span></div>
+            <div class="flow">
+              <div class="node"><div class="ic"><i class="devicon-terraform-plain colored"></i></div><b>Terraform</b><small>Provision</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="fa-solid fa-server" style="color:#ff9900"></i></div><b>AWS EC2</b><small>Linux host</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="devicon-docker-plain colored"></i></div><b>Docker Compose</b><small>Containers</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="devicon-prometheus-original colored"></i></div><b>Prometheus</b><small>Scrape metrics</small></div>
+              <div class="conn"></div>
+              <div class="stack">
+                <div class="node sm"><div class="ic"><i class="devicon-grafana-original colored"></i></div><b>Grafana</b><small>Dashboards</small></div>
+                <div class="node sm"><div class="ic"><i class="fa-solid fa-bell" style="color:#e6522c"></i></div><b>Alertmanager</b><small>Alerts</small></div>
+              </div>
+            </div>
+            <div class="rail"><i class="fa-solid fa-bolt"></i> Real-time dashboards <i class="fa-solid fa-arrow-right"></i> alert rules <i class="fa-solid fa-arrow-right"></i> faster incident response</div>
+            <div class="shot" data-shot="observability"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project">
+        <div class="p-info reveal-l">
+          <span class="p-no">03</span>
+          <div class="p-date">Jun'25 – Jul'25</div>
+          <h3>AI Deadlock Detection System</h3>
+          <h4>Machine learning for real-time deadlock resolution</h4>
+          <ul>
+            <li>Developed an AI-based system using machine learning to identify and resolve process deadlocks in real time.</li>
+            <li>Built real-time monitoring to detect, analyse and mitigate deadlocks, improving resource allocation and system efficiency.</li>
+            <li>Designed a scalable, modular architecture for integration with operating systems and distributed environments.</li>
+            <li>Reduced bottlenecks and improved process synchronisation using cycle detection algorithms.</li>
+          </ul>
+          <div class="chips"><span>Python</span><span>Machine Learning</span><span>Resource Allocation Graph</span><span>Cycle Detection</span><span>OS Concepts</span></div>
+          <a class="pill pill-dark magnetic" href="https://github.com/Vishal2345678" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View on GitHub</a>
+        </div>
+        <div class="p-visual reveal-r">
+          <div class="win">
+            <div class="win-bar"><i></i><i></i><i></i><span>deadlock-detector / pipeline</span></div>
+            <div class="flow">
+              <div class="node"><div class="ic"><i class="fa-solid fa-microchip"></i></div><b>Processes</b><small>Running tasks</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="fa-solid fa-diagram-project"></i></div><b>Resource Graph</b><small>RAG model</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="fa-solid fa-arrows-rotate"></i></div><b>Cycle Detection</b><small>Find cycles</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="fa-solid fa-brain" style="color:#b79cff"></i></div><b>ML Model</b><small>Classify risk</small></div>
+              <div class="conn"></div>
+              <div class="node"><div class="ic"><i class="fa-solid fa-circle-check" style="color:#3ddc97"></i></div><b>Resolution</b><small>Release resources</small></div>
+            </div>
+            <div class="rail"><i class="fa-solid fa-rotate"></i> Continuous monitoring loop keeps allocation healthy and synchronised</div>
+            <div class="shot" data-shot="deadlock"></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TERMINAL -->
+  <section class="section term-sec">
+    <div class="wrap term-grid">
+      <div class="reveal-l">
+        <p class="eyebrow"><span></span> Quick look</p>
+        <h2 class="h2">My profile, <em>in a terminal</em></h2>
+        <p class="muted">A DevOps engineer feels at home on the command line, so here is the short version of who I am.</p>
+      </div>
+      <div class="terminal reveal-r">
+        <div class="win-bar"><i></i><i></i><i></i><span>vishal@devops: ~</span></div>
+        <pre id="term" aria-label="Terminal summary of Vishal's profile"></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="section journey" id="journey">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow reveal"><span></span> My journey</p>
+        <h2 class="h2 reveal">Education, training & milestones</h2>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="tl-line"><i id="tlFill"></i></div>
+        <div class="tl-item reveal-l"><span class="tl-dot"></span><div class="tl-card"><time>Aug'23 – Present</time><h4>B.Tech, Computer Science & Engineering</h4><p>Lovely Professional University, Phagwara, Punjab · CGPA 6.84</p></div></div>
+        <div class="tl-item reveal-r"><span class="tl-dot"></span><div class="tl-card"><time>Apr'25</time><h4>Oracle Data Platform 2025 Certified Foundations Associate</h4><p>Also completed NPTEL: Introduction To Internet of Things.</p></div></div>
+        <div class="tl-item reveal-l"><span class="tl-dot"></span><div class="tl-card"><time>Jun'25 – Jul'25</time><h4>DSA Training at LPU (A grade) · AI Deadlock Detection</h4><p>Arrays, linked lists, stacks, queues, trees, sorting, searching and recursion in C++. Built the AI-powered deadlock detection system.</p></div></div>
+        <div class="tl-item reveal-r"><span class="tl-dot"></span><div class="tl-card"><time>Nov'25</time><h4>AWS Student Developer Conference 2025</h4><p>Explored AWS, AI and scalable architectures.</p></div></div>
+        <div class="tl-item reveal-l"><span class="tl-dot"></span><div class="tl-card"><time>Apr'26 – May'26</time><h4>AWS Certified Solutions Architect – Associate</h4><p>Earned the certification, added Alibaba Cloud ClickHouse, and built the Cloud Observability Monitoring Stack.</p></div></div>
+        <div class="tl-item reveal-r"><span class="tl-dot"></span><div class="tl-card"><time>Aug'26 – Sep'26</time><h4>GitShip: GitOps on AWS EKS</h4><p>Shipped a full GitOps pipeline with GitHub Actions, ECR, ArgoCD and OIDC-based authentication.</p></div></div>
+      </div>
+      <div class="edu-row">
+        <div class="edu reveal"><i class="fa-solid fa-building-columns"></i><b>Lovely Professional University</b><span>B.Tech CSE · Phagwara, Punjab</span><em>CGPA 6.84</em></div>
+        <div class="edu reveal"><i class="fa-solid fa-school"></i><b>St. Xavier's Public School</b><span>Intermediate · Gorakhpur, UP</span><em>65%</em></div>
+        <div class="edu reveal"><i class="fa-solid fa-book-open"></i><b>Shakti Shanti Academy</b><span>Matriculation · Saran, Bihar</span><em>71%</em></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="section certs" id="certifications">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow reveal"><span></span> Credentials</p>
+        <h2 class="h2 reveal">Certifications & <em>achievements</em></h2>
+      </div>
+      <div class="cert-grid">
+        <article class="cert-card reveal" data-cert="aws-solutions-architect">
+          <div class="cert-img"><div class="cert-ph"><i class="fa-brands fa-aws"></i></div></div>
+          <div class="cert-body"><span class="cert-tag">Apr'26</span><h4>AWS Certified Solutions Architect – Associate</h4><p>Amazon Web Services</p></div>
+        </article>
+        <article class="cert-card reveal" data-cert="oracle-data-platform">
+          <div class="cert-img"><div class="cert-ph"><i class="fa-solid fa-database" style="color:#f80000"></i></div></div>
+          <div class="cert-body"><span class="cert-tag">Apr'25</span><h4>Oracle Data Platform 2025 Certified Foundations Associate</h4><p>Oracle</p></div>
+        </article>
+        <article class="cert-card reveal" data-cert="alibaba-clickhouse">
+          <div class="cert-img"><div class="cert-ph"><i class="fa-solid fa-cloud" style="color:#ff6a00"></i></div></div>
+          <div class="cert-body"><span class="cert-tag">Apr'26</span><h4>Alibaba Cloud ApsaraDB for ClickHouse</h4><p>Alibaba Cloud Academy</p></div>
+        </article>
+        <article class="cert-card reveal" data-cert="nptel-iot">
+          <div class="cert-img"><div class="cert-ph"><i class="fa-solid fa-microchip" style="color:#5ad0ff"></i></div></div>
+          <div class="cert-body"><span class="cert-tag">Apr'25</span><h4>Introduction To Internet of Things</h4><p>NPTEL</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal-l">
+        <p class="eyebrow"><span></span> Contact</p>
+        <h2 class="h2 big">Let's build something <em>reliable</em> together.</h2>
+        <p class="muted">Have an opportunity, an internship or a cloud project in mind? Send me a message and I'll get back to you.</p>
+        <ul class="c-list">
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:vishalchandravanshi59@gmail.com">vishalchandravanshi59@gmail.com</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="tel:+919110017202">+91-9110017202</a></li>
+          <li><i class="fa-brands fa-linkedin-in"></i><a href="https://linkedin.com/in/vishalchandravanshi6" target="_blank" rel="noopener">linkedin.com/in/vishalchandravanshi6</a></li>
+          <li><i class="fa-brands fa-github"></i><a href="https://github.com/Vishal2345678" target="_blank" rel="noopener">github.com/Vishal2345678</a></li>
+        </ul>
+      </div>
+      <form class="form reveal-r" id="form">
+        <label>Your name<input type="text" id="fn" required placeholder="John Doe" /></label>
+        <label>Your email<input type="email" id="fe" required placeholder="you@company.com" /></label>
+        <label>Message<textarea id="fm" rows="5" required placeholder="Tell me about the role or project..."></textarea></label>
+        <button type="submit" class="pill pill-white magnetic"><i class="fa-solid fa-paper-plane"></i> Send message</button>
+        <small>This opens your email app with the message ready to send.</small>
+      </form>
+    </div>
+    <footer>
+      <div class="wrap foot"><span>© <span id="year"></span> Vishal Chandravanshi. All rights reserved.</span><a href="#home" class="to-top">Back to top <i class="fa-solid fa-arrow-up"></i></a></div>
+    </footer>
+  </section>
+
+  <div class="lightbox" id="lightbox"><button aria-label="Close">&times;</button><img alt="Certificate" /></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
